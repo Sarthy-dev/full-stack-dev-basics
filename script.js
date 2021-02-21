@@ -17,4 +17,13 @@ function display_rate()
     var output = document.getElementById("rate-op");
     output.innerHTML = slider.value;
 }
+function validate_principal()
+{
+    var p =  document.getElementById("principal").value;
+    if (p <= 0)
+    {
+        var output = document.getElementById("valid-principal");
+        output.innerHTML = "Enter a positive number";
+    }
+}
         
