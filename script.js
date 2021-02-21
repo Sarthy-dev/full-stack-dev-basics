@@ -10,8 +10,8 @@ function compute()
     var amount = +principal + +interest;
     var curr_year = new Date().getFullYear();
     var result = document.getElementById("result");
-    result.innerHTML = "If you deposit " + "<mark>"+principal+"</mark>";
-    result.innerHTML += ",at an interest rate of "+"<mark>"+rate+"%"+"</mark>"+". You will receive an amount of "+"<mark>"+amount+"</mark>"+",\nin the year "+"<mark>"+(+curr_year + +years)+"</mark>";
+    result.innerHTML = "If you deposit " + "<mark>"+principal+"</mark><br>";
+    result.innerHTML += ",at an interest rate of "+"<mark>"+rate+"%"+"</mark><br>"+". You will receive an amount of "+"<mark>"+amount+"</mark><br>"+",in the year "+"<mark>"+(+curr_year + +years)+"</mark><br>";
     
 }
 function display_rate()
